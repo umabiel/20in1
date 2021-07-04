@@ -1,6 +1,7 @@
 .quote-container {
   width: auto;
   max-width: 900px;
+  min-width: 900px;
   padding: 20px 30px;
   border-radius: 10px;
   background-color: rgba($color: #ffffff, $alpha: 0.4);
@@ -8,6 +9,10 @@
 
   .quote-text {
     font-size: 2.75rem;
+    display: none;
+    &-show {
+      display: block;
+    }
   }
 
   .long-quote {
@@ -16,6 +21,7 @@
 
   .fa-quote-left {
     font-size: 4rem;
+    margin-right: 1rem;
   }
 
   .quote-author {
@@ -61,6 +67,30 @@
     .fa-twitter {
       font-size: 1.5rem;
     }
+  }
+}
+
+// Loader
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #adaeaf;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear infinite;
+  display: none;
+}
+.show {
+  display: block;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
