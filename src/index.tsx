@@ -3,11 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 // import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { QuoteGenerator } from "./components/QuoteGenerator/QuoteGenerator";
+// import { QuoteGenerator } from "./components/QuoteGenerator/QuoteGenerator";
+import { InfineScroll } from "./components/InfiniteScroll/InfineScroll";
 
 ReactDOM.render(
   <React.StrictMode>
-    <QuoteGenerator />
+    <InfineScroll />
   </React.StrictMode>,
   document.getElementById("root")
 );
